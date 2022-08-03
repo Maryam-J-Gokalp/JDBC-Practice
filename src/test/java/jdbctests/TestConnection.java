@@ -31,7 +31,6 @@ public class TestConnection {
         //2 I used next 2 times because it prints
        // System.out.println(resultSet.getString(1));
 
-
         // 1- Europa
         // 2- Americas
         // 3- Europa
