@@ -1,12 +1,10 @@
-package jdbctests;
-
 import org.junit.jupiter.api.Test;
 
 import java.sql.*;
 
 public class JDBC_Examples {
 
-    String dbURL = "jdbc:oracle:thin:@18.206.123.3:1521:XE";
+    String dbURL = "jdbc:oracle:thin:@54.237.206.21:1521:XE";
     String dbUserName= "hr";
     String dbPassword= "hr";
     String QUERY = "select * from departments";
@@ -62,6 +60,7 @@ public class JDBC_Examples {
         ResultSet resultSet = statement.executeQuery("select * from departments");
 
         //hot to find how many rows we have for the query
+        //Result set is to get the inf only
 /*        int count =0;
 
         while (resultSet.next()){
@@ -70,7 +69,7 @@ public class JDBC_Examples {
         }
         System.out.println(count);*/
 
-        //2. yöntem sona git row numarası al ve yazdır.
+        //2. method go to end get row number and print it.
 
         resultSet.last();
 
@@ -80,21 +79,15 @@ public class JDBC_Examples {
 
 //----------------------****-------------------------****----------------------***-----------------**---------------*------------
 
-        resultSet.beforeFirst();//after last method tekrar başa dönmek için yapılır
+        resultSet.beforeFirst();//after last method feito para voltar ao início
 
         while (resultSet.next()){
             System.out.println(resultSet.getString(2));
         }
 
-
-
         resultSet.close();
         statement.close();
         conn.close();
-
-
-
-
 
     }
 
@@ -152,8 +145,4 @@ public class JDBC_Examples {
 
     }
 
-
-
-
-
-    }
+}

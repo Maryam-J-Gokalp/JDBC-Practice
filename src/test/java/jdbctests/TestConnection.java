@@ -8,7 +8,7 @@ public class TestConnection {
 
         //Connection String
 
-        String dbURL = "jdbc:oracle:thin:@18.206.123.3:1521:XE";
+        String dbURL = "jdbc:oracle:thin:@54.237.206.21:1521:XE";
         String dbUserName= "hr";
         String dbPassword= "hr";
 
@@ -24,11 +24,11 @@ public class TestConnection {
         //getting information with column name
         System.out.println(resultSet.getString("region_name")); //Europe
         System.out.println(resultSet.getString(2));
-        //resultSet.next(); //new row a geçmek için kullanılır
+        //resultSet.next(); //new row a used to pass
        // System.out.println(resultSet.getString("region_name")); //Americas
 
 
-        //2 yi yazdırmasının nedeni 2 defa next kullandım
+        //2 I used next 2 times because it prints
        // System.out.println(resultSet.getString(1));
 
 
@@ -57,9 +57,6 @@ public class TestConnection {
         resultSet.close();
         statement.close();
         connection.close();
-
-
-
 
 
     }
