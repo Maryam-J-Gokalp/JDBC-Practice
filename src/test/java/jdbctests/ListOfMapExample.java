@@ -49,6 +49,7 @@ public class ListOfMapExample {
         //print to get Steven last name
         System.out.println(queryData.get(0).get("last_name"));
 
+
     }
     // copy everything from the first part to the second part change the () and use result set
 

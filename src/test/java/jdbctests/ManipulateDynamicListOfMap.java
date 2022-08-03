@@ -18,6 +18,7 @@ public class ManipulateDynamicListOfMap {
         Statement statement = conn.createStatement(); //ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY
         ResultSet resultSet = statement.executeQuery("SELECT * from employees");
 
+
         // in order to get columns name we need ResultSetMetaData
         ResultSetMetaData rsmd = resultSet.getMetaData();
 

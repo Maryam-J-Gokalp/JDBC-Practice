@@ -6,6 +6,7 @@ public class TestConnection {
 
     public static void main(String[] args) throws SQLException {
 
+
         //Connection String
 
         String dbURL = "jdbc:oracle:thin:@54.237.206.21:1521:XE";

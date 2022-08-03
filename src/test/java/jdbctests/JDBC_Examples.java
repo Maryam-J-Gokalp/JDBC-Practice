@@ -4,6 +4,7 @@ import java.sql.*;
 
 public class JDBC_Examples {
 
+
     String dbURL = "jdbc:oracle:thin:@54.237.206.21:1521:XE";
     String dbUserName= "hr";
     String dbPassword= "hr";
